@@ -1,0 +1,25 @@
+Part 1: 
+
+1. Get Raspberry Pi for hub server and Raspberry Pi Pico W for individual rc robots
+  a) Connecting to individual pico W's would be too much to try and get configured through a firewall (one port per unit?), so having a central hub unit that takes all external HTTP commands and then processes them and sends them to client rc units would be much more viable. One external firewall connection to configure.
+  b) The pico W has built in wireless capabilities, and is a good amount cheaper than the default pi, so I think that it would be able to be used for bulk building of the rc components.
+2. Set up Pi Pico W with an rc robot pi kit with wheels, motors, battery, and camera. 
+  a) https://www.amazon.com/ELEGOO-Tracking-Ultrasonic-Intelligent-Educational/dp/B07KPZ8RSZ?th=1
+3. Set up hub as a websocket server on Pi that connects to users via AWS. 
+  a) https://github.com/Mosquid/py-robot-websocket-server/
+4. Set up client server on pico that responds to commands given from Hub server, either via bluetooth or Wifi.
+5. Set up control front end browser that sends commands to hub.
+  a) https://www.npmjs.com/package/react-use-websocket
+
+Part 2:
+
+1. Handle twitter integration, authentication, network capacity, etc 
+2. Slim down Pis' resource use
+3. Find individual parts to purchase in larger amount instead of purchasing kits.
+4. Create an action pieces (a component that sends a motorized 'kick')
+5. Work on appearance / branding / image of rc units.
+6. Work on multi unit network testing
+
+Part 3:
+
+1. Make videos, go viral, sell out, buy cocaine / hookers, etc
